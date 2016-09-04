@@ -1,0 +1,50 @@
+﻿.occupied {
+	background-color:blue;
+}
+
+.today {
+	background-color:aqua;
+}
+
+.today.occupied {
+	background-color:darkblue;
+	color:red;
+}
+
+table {
+	width: 50%;
+}
+
+thead {
+	font-size:large;
+	font-weight:bold;
+}
+
+tr:first-of-type {
+	background-color:darkgray;
+}
+
+tr {
+	background-color:gainsboro;
+}
+
+#legenda > p {
+	width: 25%;
+}
+
+#legenda > p:first-of-type {
+	background-color:gainsboro;
+}
+
+#legenda > p:nth-of-type(2) {
+	background-color:blue;
+}
+
+#legenda > p:nth-of-type(3) {
+	background-color:aqua;
+}
+
+#legenda > p:nth-of-type(4) {
+	background-color:darkblue;
+	color: red;
+}
