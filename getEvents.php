@@ -12,16 +12,20 @@ $dbname="calendar";
 $con = new mysqli($host, $user, $password, $dbname, $port, $socket)
 	or die ('Could not connect to the database server' . mysqli_connect_error());
 
+mysqli_set_charset($con, "utf8");
+
 $query = "SELECT * FROM udalosti";
 
 $result = mysqli_query($con, $query);
+
 
 while($rows = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 $events[] = $rows;
 };
 
-echo(json_encode($events, JSON_UNESCAPED_UNICODE));
 
+echo(json_encode($events, JSON_UNESCAPED_UNICODE));
 $con->close();
 
 ?>
+
