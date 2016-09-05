@@ -28,6 +28,24 @@ tr {
 	background-color:gainsboro;
 }
 
+td:nth-child(7n) {
+background-color:beige;
+}
+
+td:nth-child(7n).occupied {
+background-color:chocolate;
+}
+
+
+td:nth-child(8n) {
+	background-color:burlywood;
+}
+
+td:nth-child(8n).occupied {
+	background-color:coral;
+}
+
+
 #legenda > p {
 	width: 25%;
 }
